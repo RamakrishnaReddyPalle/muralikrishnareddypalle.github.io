@@ -1,27 +1,73 @@
 import React from "react";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import portfolioImage from '../assets/images/portfolio_dp.jpg';  
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GroupsIcon from '@mui/icons-material/Groups';
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+
+import portfolioImage from '../assets/images/portfolio_dp.jpg';
 import '../assets/styles/Main.scss';
 
 function Main() {
   return (
     <div className="container">
       <div className="about-section">
+
         <div className="image-wrapper">
-          <img src={portfolioImage} alt="Avatar" /> {/* Use imported path */}
+          <img src={portfolioImage} alt="Candidate Portrait" />
         </div>
+
         <div className="content">
-          <div className="social_icons">
-            <a href="https://github.com/RamakrishnaReddyPalle" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/p-rama-krishna-reddy-038b30246/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+
+          <div className="campaign-badge">
+            OSMECON 2026 CORE TEAM ELECTION
           </div>
-          <h1>Ramakrishna Reddy Palle</h1>
-          <p>AI ML Engineer</p>
-          <div className="mobile_social_icons">
-            <a href="https://github.com/RamakrishnaReddyPalle" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-            <a href="https://www.linkedin.com/in/p-rama-krishna-reddy-038b30246/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+
+          <h1>
+            PALLE <br />
+            MURALIKRISHNA REDDY
+          </h1>
+
+          <h2>
+            Candidate for Organising Secretary
+          </h2>
+
+          <p className="campaign-line">
+            Leadership. Dedication. Vision.
+          </p>
+
+          <p className="campaign-description">
+            Building OSMECON 2026 with teamwork,
+            professionalism, inclusiveness, and experience
+            gained through years of organizational leadership
+            and student engagement.
+          </p>
+
+          <div className="stats-row">
+
+            <div className="stat-card">
+              <EmojiEventsIcon />
+              <h3>3+</h3>
+              <p>Years of Experience</p>
+            </div>
+
+            <div className="stat-card">
+              <GroupsIcon />
+              <h3>1000+</h3>
+              <p>People Impacted</p>
+            </div>
+
+            <div className="stat-card">
+              <InstagramIcon />
+              <h3>10+</h3>
+              <p>Colleges Reached</p>
+            </div>
+
           </div>
+
+          <div className="hero-buttons">
+            <a href="#timeline">My Journey</a>
+            <a href="#vision">My Vision</a>
+          </div>
+
         </div>
       </div>
     </div>
